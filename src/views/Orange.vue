@@ -1,31 +1,23 @@
 <template>
 	<div>
 		<div id="email-sig-wrap" ref="sigwrap">
-			
-			<!--[if gte mso 9]>
-				<table cellspacing=0><tr><td style="font-family: Arial; font-size: 16px; width: 100px; height: auto; padding: 3px; vertical-align: top">
-			<![endif]-->
-			<div style="float: left; font-family: Arial; font-size: 16px; color: #fff; width: auto; height: auto; padding: 3px; vertical-align: top">
+			<div style="float: left; font-family: Arial; font-size: 16px; color: #fff; width: auto; height: auto; padding: 0px 30px 3px 0; vertical-align: top">
 				<a :href="elink" target="_blank">
-					<img :src="[pimage]" style="display: block; max-width: 125px; width: 100%; vertical-align: top;" class="sigimage">
+					<img :src="[pimage]" style="display: block; max-width: 145px; width: 100%; vertical-align: top;" class="sigimage">
 				</a>
 			</div>
-			<!--[if gte mso 9]>
-				</td>
-				<td style="font-family: Arial; font-size: 10pt; color: #fff; background-color: red; width: 250px; height: 100px; padding: 3px; vertical-align: top">
-			<![endif]-->
-			<div style="float: left; font-size: 16px; width: auto; height: auto; padding: 3px 15px; vertical-align: top">
-				<div style="font-family: 'Helvetica', sans-serif; font-size: 19pt; color: #222; font-weight: 600; line-height: 1;padding-top: 18px;padding-bottom: 5px;" class="signame">{{fname}}</div>
-				<div style="font-family: 'Helvetica', sans-serif; font-size: 10pt; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 0px; padding-bottom: 10px;" class="sigpos">{{position}}</div>
-				<div v-if="mobile != 'false'" style="font-family: 'Helvetica', sans-serif; font-size: 10pt; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 5px;display: inline-block;"><span style="width: 10px;display: inline-block;text-align: center; color: #ff6000; font-weight: 600;">M</span><span style="color: #ff6000; font-weight: 600;padding-left:2px;">:</span> <a :href="mlink" style="text-decoration: none; color: #222;"><span style="display: inline-block; text-decoration: none;">{{mobile}}</span></a></div>
-				<div v-if="office !== 'false'" style="font-family: 'Helvetica', sans-serif; font-size: 10pt; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 5px;display: inline-block;"><span style="width: 10px;display: inline-block;text-align: center; color: #ff6000; font-weight: 600;margin-left: 5px;">O</span><span style="color: #ff6000; font-weight: 600;padding-left:2px;">:</span> <a :href="olink" style="text-decoration: none; color: #222;"><span style="display: inline-block; text-decoration: none;">{{office}}</span></a></div>
-				<div style="font-family: sans-serif; font-size: 12px; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 5px;"><span style="width: 10px;display: inline-block;text-align: center; color: #ff6000; font-weight: 600;">E</span><span style="color: #ff6000; font-weight: 600;padding-left:2px;">:</span> <a :href="elink" style="text-decoration: none; color: #222;"><span style="display: inline-block; text-decoration: none;">{{email}}</span></a></div>
-				<div style="font-family: sans-serif;     font-size: 12px; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 10px;">
-					<a href="http://www.facebook.com/straightortho/" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 2px 0 0;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/sc-facebook-icon.png" style="max-height: 25px; display: block;"></a>
-					<a href="https://twitter.com/straightwires" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 2px;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/sc-twitter-icon.png" style="max-height: 25px; display: block;"></a>
-					<a href="https://www.youtube.com/channel/UCmzg5cl_jDqtAdnnUOIdPoA" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 2px;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/sc-youtube-icon.png" style="max-height: 25px; display: block;"></a>
-					<a href="https://www.instagram.com/straightconsulting/" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 2px;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/sc-instagram-icon.png" style="max-height: 25px; display: block;"></a>
-					<a href="https://www.linkedin.com/company/straight-consulting" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 2px;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/sc-linkedin-icon.png" style="max-height: 25px; display: block;"></a>
+			<div style="float: left; font-size: 16px; width: auto; height: auto; padding: 3px 0px; vertical-align: top">
+				<div style="font-family: 'Helvetica', sans-serif; font-size: 19pt; color: #222; font-weight: 600; line-height: 1;padding-top: 18px;padding-bottom: 2px; letter-spacing: 3px;" class="signame">{{fname}}</div>
+				<div style="font-family: 'Helvetica', sans-serif; font-size: 10pt; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 0px; padding-bottom: 15px;" class="sigpos">{{position}}</div>
+				<div v-if="mobile != 'false'" style="font-family: 'Helvetica', sans-serif; font-size: 10pt; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 0px;display: inline-block;margin-right: 5px;"><span style="width: 14px;display: inline-block;text-align: center; color: #ff6000; font-weight: 600;">M</span><span style="color: #ff6000; font-weight: 600;padding-left:0px;">:</span> <a :href="mlink" style="text-decoration: none; color: #222;"><span style="display: inline-block; text-decoration: none;">{{mobile}}</span></a></div>
+				<div v-if="office !== 'false'" style="font-family: 'Helvetica', sans-serif; font-size: 10pt; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 0px;display: inline-block;"><span style="width: 14px;display: inline-block;text-align: center; color: #ff6000; font-weight: 600;">O</span><span style="color: #ff6000; font-weight: 600;padding-left:0px;">:</span> <a :href="olink" style="text-decoration: none; color: #222;"><span style="display: inline-block; text-decoration: none;">{{office}}</span></a></div>
+				<div style="font-family: sans-serif; font-size: 12px; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 0px;"><span style="width: 14px;display: inline-block;text-align: center; color: #ff6000; font-weight: 600;">E</span><span style="color: #ff6000; font-weight: 600;padding-left:0px;">:</span> <a :href="elink" style="text-decoration: none; color: #222;"><span style="display: inline-block; text-decoration: none;">{{email}}</span></a></div>
+				<div style="font-family: sans-serif;     font-size: 12px; font-weight: 400; color: #222; letter-spacing: 1px; padding-top: 15px;">
+					<a href="http://www.facebook.com/straightortho/" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin-right:2px;padding-left: 1px;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/social-20-min.png" style="max-height: 25px; display: block;"></a>
+					<a href="https://twitter.com/straightwires" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 4px 0 0;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/social-21-min.png" style="max-height: 25px; display: block;"></a>
+					<a href="https://www.youtube.com/channel/UCmzg5cl_jDqtAdnnUOIdPoA" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 4px 0 0;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/social-22-min.png" style="max-height: 25px; display: block;"></a>
+					<a href="https://www.instagram.com/straightconsulting/" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 4px 0 0;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/social-23-min.png" style="max-height: 25px; display: block;"></a>
+					<a href="https://www.linkedin.com/company/straight-consulting" target="_blank" style="text-decoration: none; display: inline-block;padding: 0px; margin: 0 2px;"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/social-19-min.png" style="max-height: 25px; display: block;"></a>
 				</div>
 			</div>
 			<div style="clear: both;"></div>
@@ -36,10 +28,6 @@
 				<a href="https://www.straightconsulting.com/orthodontic-practice-management-services/trapezio/" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/trapezio-logo.png" style="width: auto; height: auto; max-height: 48px;" ></a>
 			</div>
 			<div style="clear: both;"></div>
-			<!--[if gte mso 9]>    
-				</td></tr></table>
-			<![endif]-->
-
 		</div>
 		<transition name="fade" mode="out-in">
 			<div v-show="showCode" class="CodeWrap">
