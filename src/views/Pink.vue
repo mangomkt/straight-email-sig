@@ -146,7 +146,7 @@ export default {
 	},
 	download: function() {
 		this.copy = this.$refs.sigwrap;
-		this.downloadCreate("rs-email-signature.html",this.copy.innerHTML);
+		this.downloadCreate("straight-pink-email-signature.html",this.copy.innerHTML);
 	}
   }
 }
