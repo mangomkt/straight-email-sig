@@ -22,10 +22,17 @@
 			</div>
 			<div style="clear: both;"></div>
 			<div style="display: block; padding-top: 20px;">
-				<a href="https://www.straightconsulting.com/" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/straight-consulting-logo.png" style="width: auto; height: auto; max-height: 48px;" ></a>
-				<a href="https://www.straightconsulting.com/tc-mastery/" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/tc-mastery-course-logo.png" style="width: auto; height: auto; max-height: 48px;" ></a>
-				<a href="https://www.straightconsulting.com/straight-talk/" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/straight-talk-logo.png" style="width: auto; height: auto; max-height: 48px;" ></a>
-				<a href="https://www.straightconsulting.com/orthodontic-practice-management-services/trapezio/" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/trapezio-logo.png" style="width: auto; height: auto; max-height: 48px;" ></a>
+				<div style="display: block; float: left; width: 234px;">
+					<a href="https://www.straightconsulting.com/" style="display: block; width: 117px; float: left; text-align: left;" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/straight-consulting-logo.png" style="width: 100%; height: auto; max-height: 52px; display: inline-block;" ></a>
+					<a href="https://www.straightconsulting.com/tc-mastery/" style="display: block; width: 117px; float: left; text-align: center;" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/tc-mastery-course-logo.png" style="width: auto; height: auto; max-height: 52px; display: inline-block;" ></a>
+					<div style="clear: both;"></div>
+				</div>
+				<div style="display: block; float: left; width: 234px;">
+					<a href="https://www.straightconsulting.com/straight-talk/"  style="display: block; width: 90px; float: left; text-align: left;" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/straight-talk-logo.png" style="width: auto; height: auto; max-height: 52px; display: inline-block;" ></a>
+					<a href="https://www.straightconsulting.com/orthodontic-practice-management-services/trapezio/" style="display: block; width: 108px; float: left; text-align: center;" target="_blank"><img src="https://www.straightconsulting.com/wp-content/uploads/2020/12/trapezio-logo.png" style="width: auto; height: auto; max-height: 52px; display: inline-block;" ></a>
+					<div style="clear: both;"></div>
+				</div>
+				<div style="clear: both;"></div>
 			</div>
 			<div style="clear: both;"></div>
 		</div>
